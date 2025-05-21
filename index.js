@@ -2,21 +2,6 @@ const express = require("express");
 const app = express();
 
 const store = {
-  info: {
-    name: "Mystic Market",
-    open: true,
-    description: "A one-stop shop for adventurers seeking rare and magical provisions. From healing potions to enchanted spices, we've got everything you need to survive and thrive in your quest.",
-    hours: [
-      { day: "Monday", hours: "8:00 AM - 8:00 PM" },
-      { day: "Tuesday", hours: "8:00 AM - 8:00 PM" },
-      { day: "Wednesday", hours: "8:00 AM - 8:00 PM" },
-      { day: "Thursday", hours: "8:00 AM - 8:00 PM" },
-      { day: "Friday", hours: "8:00 AM - 10:00 PM" },
-      { day: "Saturday", hours: "10:00 AM - 10:00 PM" },
-      { day: "Sunday", hours: "10:00 AM - 6:00 PM" },
-    ],
-    image: "store.jpg",
-  },
   items: [
     {
       name: "Healing Potion",
@@ -49,7 +34,7 @@ const store = {
 // 3. Set the view engine to EJS
 
 
-// 4. Set up the router for / to send back home.ejs with the info attribute
+// 4. Set up the router for / to send back menu.ejs with the items array
 
 
 
